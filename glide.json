@@ -8,7 +8,7 @@
       {
         "name": "in_amount",
         "displayName": "Amount",
-        "type": "string"
+        "type": "number"
       },
       {
         "name": "in_order",
