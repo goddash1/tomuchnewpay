@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "column",
+    "name": "Сase of a noun with a numeral",
+    "description": "Return right word form for a digit.",
+    "author": "Max Nikitin <mnikitin@itsalt.ru>",
+    "params": [
+      {
+        "name": "in_amount",
+        "displayName": "Amount",
+        "type": "string"
+      },
+      {
+        "name": "in_order",
+        "displayName": "Order ID",
+        "type": "string"
+      },
+      {
+        "name": "in_recip",
+        "displayName": "Recipient",
+        "type": "string"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
