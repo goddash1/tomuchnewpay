@@ -4,7 +4,7 @@ const glideamount = in_amount.value;
 const gliderecip = String(in_recip.value) ?? "";
 const glideorder = String(in_order.value) ?? "";
 
-function generateHash() {
+
   const secret = '7a395ee6-de9e-4225-a82c-04612683ed65';
   const data = {
     currencyID: 4,
@@ -17,9 +17,6 @@ function generateHash() {
   const raw = JSON.stringify(data);
   const hash = CryptoJS.HmacSHA512(raw, secret).toString();
   return hash;
-};
 
-  return generateHash();
-// Call generateHash and log the result to the console
-console.log(generateHash());
+
 }
