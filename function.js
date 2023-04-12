@@ -1,10 +1,10 @@
 window.function = function (in_amount, in_recip, in_order) {
 
-const glideamount = String(in_amount.value) ?? null;
+const glideamount = in_amount.value;
 const gliderecip = String(in_recip.value) ?? "";
 const glideorder = String(in_order.value) ?? "";
 
-return function generateHash() {
+function generateHash() {
   const secret = '7a395ee6-de9e-4225-a82c-04612683ed65';
   const data = {
     currencyID: 4,
@@ -19,6 +19,7 @@ return function generateHash() {
   return hash;
 };
 
+  return generateHash();
 // Call generateHash and log the result to the console
 console.log(generateHash());
 }
