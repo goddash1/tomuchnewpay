@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Hash</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <script>
+    function generateHash() {
+      const secret = '7a395ee6-de9e-4225-a82c-04612683ed65';
+      const data = {
+        currencyID: 4,
+        amount: 500,
+        recipientTypeID: 1,
+        recipient: '2202206147539923',
+        clientOrderID: '2134236452vsfdsDas',
+        webhookURL: 'https://webhook.site/6c2fa6fa-ec9f-47ca-a2c2-18505a6dec9b'
+      };
+      const raw = JSON.stringify(data);
+      const hash = CryptoJS.HmacSHA512(raw, secret).toString();
+      return hash;
+    }
+  </script>
+</body>
+</html>
