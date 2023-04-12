@@ -1,9 +1,9 @@
 [
   {
     "kind": "column",
-    "name": "Сase of a noun with a numeral",
-    "description": "Return right word form for a digit.",
-    "author": "Max Nikitin <mnikitin@itsalt.ru>",
+    "name": "Payment processor",
+    "description": "Return hash for payments",
+    "author": "Artsiom",
     "params": [
       {
         "name": "in_amount",
