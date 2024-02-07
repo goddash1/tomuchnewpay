@@ -5,8 +5,7 @@ const gliderecip = String(in_recip.value) ?? "";
 const glideorder = String(in_order.value) ?? "";
 
 function generateHash() {
-  const secret = 't4KsvMyC3fEE8SXKiqeFnSGHa72NwV87IkDE5ntRVZFZDSUBhs9lFU91axWApEod62pdy712wagKmEnfHydR2ZDJlMliIGmG2mcnI6rJUQJdwH81t6bXqIKv1nIEAYVW6O61DAGImxxDjn7l2UbBjzY2pQhC6qbeRgRYMSDLw2pYcucx5pLJUSwPMUGKtVCOrtXfPCWY6i3vA8cjEI5vFSL0EJ4thd9VDj8sYIB0XOwmcEgqFzYtsVRIJSz40BZi
-';
+  const secret = 't4KsvMyC3fEE8SXKiqeFnSGHa72NwV87IkDE5ntRVZFZDSUBhs9lFU91axWApEod62pdy712wagKmEnfHydR2ZDJlMliIGmG2mcnI6rJUQJdwH81t6bXqIKv1nIEAYVW6O61DAGImxxDjn7l2UbBjzY2pQhC6qbeRgRYMSDLw2pYcucx5pLJUSwPMUGKtVCOrtXfPCWY6i3vA8cjEI5vFSL0EJ4thd9VDj8sYIB0XOwmcEgqFzYtsVRIJSz40BZi';
   const data = {
     currencyID: 4,
     amount: glideamount,
